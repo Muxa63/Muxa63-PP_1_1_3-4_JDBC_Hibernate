@@ -2,7 +2,6 @@ package jm.task.core.jdbc;
 
 import java.util.List;
 import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 
@@ -25,16 +24,16 @@ public class Main {
         userService.saveUser(user3);
         userService.saveUser(user4);
 
-        /* Вывожу всех юзеров
+        // Вывожу всех юзеров
         List<User> users = userService.getAllUsers();
         for (User user : users) {
             System.out.println(user);
         }
 
-        // Удалил всех юзеров ( Очистка таблицы )
+        // Удалил всех юзеров (Очистка таблицы)
         userService.cleanUsersTable();
 
-        // Удаляю таблицу совсем ( 'дропаю' таблицу )
-        userService.dropUsersTable();*/
+        // Удаляю таблицу совсем ('дропаю' таблицу)
+        userService.dropUsersTable();
     }
 }
